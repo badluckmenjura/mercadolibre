@@ -1,0 +1,16 @@
+.breadcrumb{
+  padding 0 16px
+  h4{
+    color alternativeTextColor
+    display inline-block
+    &::after{
+      content: '>'
+      padding 0 5px
+    }
+    &:last-child{
+      &::after{
+        content: ''
+      }
+    }
+  }
+}

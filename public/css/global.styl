@@ -1,0 +1,101 @@
+backgroundColor = #ffe600;
+containerColor = #eeeeee;
+textColor = #333333;
+alternativeTextColor = #666666;
+fontMain = 'Roboto', sans-serif;
+
+vendor(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  -ms-{prop} args
+  -o-{prop} args
+  {prop} args
+
+transform()
+  vendor('transform', arguments)
+
+transform-origin()
+  vendor('transform-origin', arguments)
+
+transition()
+  vendor('transition', arguments)
+
+animation-duration()
+  vendor('animation-duration', arguments)
+
+animation-fill-mode()
+  vendor('animation-fill-mode', arguments)
+
+animation-name()
+  vendor('animation-name', arguments)
+
+animation-timing-function()
+  vendor('animation-timing-function', arguments)
+
+animation-delay()
+  vendor('animation-delay', arguments)
+
+box-shadow()
+  vendor('box-shadow', arguments)
+
+box-shadow()
+  vendor('box-shadow', arguments)
+
+background()
+  background: -moz-arguments
+  background: -webkit-arguments
+  background: -o-arguments
+  background: -ms-arguments
+  background: arguments
+
+user-select()
+  vendor('user-select', arguments)
+
+box-sizing()
+  vendor('box-sizing', arguments)
+
+
+body{
+  font-family: fontMain;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+h1{
+  font-family: fontMain;
+  font-size: 28px;
+  font-weight: 700
+  padding: 32px 0px
+}
+h2{
+  font-family: fontMain;
+  font-size: 24px;
+  font-weight: 900
+  padding: 0px 0px 32px 0px;
+}
+h3{
+  font-family: fontMain;
+  font-size: 18px;
+  font-weight: 400
+
+}
+h4{
+  font-family: fontMain;
+  font-size: 14px;
+  font-weight: 400
+  padding: 16px 0px
+}
+
+label{
+  font-family: fontMain;
+  font-size: 12px;
+  font-weight: 400
+}
+
+p{
+  font-size: 16px;
+  padding: 5px;
+  padding: 0px 0px 32px 0px;
+}

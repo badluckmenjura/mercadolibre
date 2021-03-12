@@ -1,0 +1,61 @@
+.empy{
+  text-align center
+  padding 100px
+  font-size 32px
+  font-weight 900
+  color alternativeTextColor
+}
+.results{
+  background #ffffff
+  padding 0 16px
+}
+
+.item{
+  border-bottom 1px solid containerColor
+  padding 16px 0
+  cursor pointer
+  .product{
+    border-radius 6px
+    max-height 200px
+    max-width: 200px
+    height auto
+    width auto
+  }
+  .value{
+    display inline-block
+    padding-right 15px
+  }
+  .shipping{
+    width 25px
+    display inline-block
+  }
+  &:last-child{
+    border-bottom none
+  }
+}
+.itemDetail{
+  background #ffffff
+  padding 16px
+  .product{
+    border-radius 6px
+    max-width 680px
+    max-height 680px
+    height auto
+    width auto
+  }
+  .info{
+    padding-left 32px
+  }
+  .value{
+    font-size 46px
+    word-break: break-all
+  }
+  button{
+    background #3483fa
+    width 100%
+    border none
+    border-radius 6px
+    color #ffffff
+    padding 16px
+  }
+}

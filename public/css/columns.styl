@@ -1,0 +1,46 @@
+.row{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	&.row-top{
+		align-items: start;
+	}
+	&.row-bottom{
+		align-items: end ;
+	}
+	&.row-center{
+		justify-content: center;
+	}
+	&.row-stretch{
+		align-items: stretch;
+	}
+}
+
+.column-content{
+	float: left;
+	box-sizing: border-box;
+	width 100%;
+	min-width: min-content;
+	&.inLine{
+		>*{
+			display inline-block;
+		}	
+	}
+	&.center{
+		text-align: center;	
+	}
+	&.right{
+		text-align: right;	
+	}
+}
+
+for row in 1..10{
+	.column-content--{row}{
+		width:(100 / 10 * row) +"%";
+		padding 0 10px
+	}
+	.column-content--offset--{row}{
+		margin-left:(100 / 10 * row) +"%";
+	}
+}
